@@ -1,0 +1,144 @@
+%\documentclass[border=10pt]{standalone}
+%\documentclass[a4paper]{article}
+%\usepackage{icomma}
+%\usepackage{pgfplots}
+%\usepackage{pgfplotstable}
+%\pgfplotsset{compat=newest}
+
+%\usepackage{filecontents}
+%\usepackage{tikz}
+%\pgfplotsset{width=0.4,compat=1.8}
+%\usepgfplotslibrary{ternary}
+%\usetikzlibrary{plotmarks}
+
+%\newcommand{\q}[2]{#1 \textit{#2}}
+
+%\begin{document}
+
+\pgfplotsset{
+    discard if not/.style 2 args={
+        x filter/.code={
+            \edef\tempa{\thisrow{#1}}
+            \edef\tempb{#2}
+            \ifx\tempa\tempb
+            \else
+                \def\pgfmathresult{inf}
+            \fi
+        }
+    }
+}
+
+\makeatletter
+\pgfplotstableset{
+    discard if not/.style 2 args={
+        row predicate/.code={
+            \def\pgfplotstable@loc@TMPd{\pgfplotstablegetelem{##1}{#1}\of}
+            \expandafter\pgfplotstable@loc@TMPd\pgfplotstablename
+            \edef\tempa{\pgfplotsretval}
+            \edef\tempb{#2}
+            \ifx\tempa\tempb
+            \else
+                \pgfplotstableuserowfalse
+            \fi
+        }
+    }
+}
+\makeatother
+
+\pgfplotsset{
+	%samples=15,
+	width=0.7\linewidth,
+	xlabel={Вертикальное напряжение $\sigma_1$, кПа},
+	ylabel={Энергия $W$, кДж/м$^3$},
+	%extra y ticks={45},
+	legend pos=north west,
+	y tick label style={
+		/pgf/number format/.cd,
+			fixed,
+			fixed zerofill,
+			precision=3,
+		/tikz/.cd
+	},
+	x tick label style={
+		/pgf/number format/.cd,
+			fixed,
+			fixed zerofill
+		/tikz/.cd
+	}
+}
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6835s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6874s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6890s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6864s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6838s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6898s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6888s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ68A0s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6840s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6895s.csv};
+	\end{axis}§
+\end{tikzpicture}
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ6885s.csv};
+	\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+	\begin{axis}
+	\addplot[mark=*, red] table [x=Sigma, y=Energy, col sep=semicolon] {Dissertation/charts/GJ68B3s.csv};
+	\end{axis}
+\end{tikzpicture}
+%\end{document}
