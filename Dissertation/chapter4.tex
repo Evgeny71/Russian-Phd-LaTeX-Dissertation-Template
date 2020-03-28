@@ -62,3 +62,44 @@
     \end{tabular}
     \\ 
 \end{table}
+
+\begin{table}[]
+    \centering
+    \caption{} \label{tab:}
+    \begin{tabular}{@{}lrrrrrrrr@{}}
+    \toprule
+    Образец & Заданное напряжение & М & Е & А & Ш & В & Автор &  \\ \midrule
+    \texttt{GJ68A0}	& 500	& 630	& 600	& 700 &&&& \\
+    \texttt{GJ6888}	& 630	& 630	& 700	& 590 &&&& \\
+    \texttt{GJ698}	& 620	& 750	& 850	& 770 &&&& \\
+    \texttt{GJ6838}	& 600	& 750	& 750	& 750 &&&& \\
+    \texttt{GJ6838} & 600	& 700	& 650	& 650 &&&& \\
+    \texttt{GJ6838} & 600	& 700	& 650	& 650 &&&& \\
+    \texttt{GJ6838} & 600	& 700	& 650	& 650 &&&& \\
+    \texttt{GJ6838} & 600	& 700	& 650	& 650 &&&& \\
+    \texttt{GJ6838} & 700	& 650	& 700	& 700 &&&& \\ 
+    \texttt{GJ6838} & 600 & 700 & 650 & 650 &&&& \
+    \texttt{GJ6838} & 600 & 700 & 650 & 650 &&&& \\ \midrule
+    \bottomrule 
+    \end{tabular}
+    \\ 
+\end{table}
+
+Из полученных значений напряжения предуплотнения $\sigma_p$ (preconsolidation pressure), можно произвести расчет напряжения переуплотнения $POP$ (preoverburden pressure) и коэффициента переуплотнения $OCR$ (overconsolidation ratio). Поскольку в испытаниях использовались искусственные образцы и бытового давления у них быть не может, за вертикальное эффективное напряжение от собственного веса грунта $\sigma_0$ принимался набор некоторых бытовых давлений "--- 100, 200, 300, 400, 500 кПа.
+Для каждого посчитан $POP$ и $OCR$. Получившиеся значения параметров приведены в таблице \ref{tab:OCR}.
+
+\begin{table}[]
+    \centering
+    \caption{Данные расчет параметров POP и OCR} \label{tab:OCR}
+    \begin{tabular}{@{}lrrrr@{}}
+    \toprule
+    Исполнитель & \texttt{POP} &	\texttt{OCR} &  \\ \midrule
+    \texttt{GJ68A0}	& 	& 630	&  \\
+    \texttt{GJ6888}	& 630	& 630	&  \\
+    \texttt{GJ698} 	& 620	& 750	&  \\
+    \texttt{GJ6838} 	& 600	& 750	& 750	& 750 \\ \midrule
+    Среднее значение & 600 & 700 & 650 & 650 \\
+    \bottomrule 
+    \end{tabular}
+    \\ 
+\end{table}
