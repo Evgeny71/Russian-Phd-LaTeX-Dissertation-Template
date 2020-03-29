@@ -1,0 +1,57 @@
+\pgfplotsset{
+%samples=15,
+width=\linewidth,
+xlabel={Содержание глинистой фракции $C_{0.002}$, \%},
+ylabel={Индекс пластичности $PI$, \%},
+%extra y ticks={45},
+legend pos=north west,
+legend cell align={left},
+}
+
+\begin{tikzpicture}
+	\begin{axis}[
+	%	grid=major,
+	%log plot exponent style/.style={
+	%/pgf/number format/fixed,
+	%/pgf/number format/use comma,
+	%/pgf/number format/precision=2,
+	%},
+	ymin = 0,
+	xmin = 0,
+	ymax = 50,
+	xmax = 30,
+	domain=0:30,
+	]
+		%\addplot coordinates{(0,0) (30, 50)};
+		%node[pos=0.8,above] {$ACT = 1.4$};
+		%node[midway,above left] {$d$};
+		%node[pos=0.2,below] {$ACT = 0.75$};
+
+		\addplot [ no marks] {1.4*x} 
+		node[pos=0.85, rotate=35] (endofplotsquare) {};
+		\node [above, rotate=35] at (endofplotsquare) {$ACT = 1.40$};
+
+
+		\addplot [ no marks] {0.75*x}
+		node[pos=0.80, rotate=20] (endofplotsquare) {};
+		\node [below, rotate=20] at (endofplotsquare) {$ACT = 0.75$};
+
+
+		%\addplot [ no marks] {x};
+
+		\addplot[only marks, mark=*, orange!80!black] table [x=C002, y=PI, col sep=semicolon] {skempton-activity-6.csv};
+		\addlegendentry{ИГЭ-6}
+
+		\addplot[only marks, mark=*, lime!80!black] table [x=C002, y=PI, col sep=semicolon] {skempton-activity-7.csv};
+		\addlegendentry{ИГЭ-7}
+
+		\addplot[only marks, mark=*, lime!50!black] table [x=C002, y=PI, col sep=semicolon] {skempton-activity-8.csv};
+		\addlegendentry{ИГЭ-8}
+
+		\addplot[only marks, mark=*, orange!50!black] table [x=C002, y=PI, col sep=semicolon] {skempton-activity-9.csv};
+		\addlegendentry{ИГЭ-9}
+
+
+		%\legend{}
+	\end{axis}
+\end{tikzpicture}
