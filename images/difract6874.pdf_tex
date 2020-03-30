@@ -1,0 +1,127 @@
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'difract6874.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{418.38759298bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.64678274)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{difract6874.pdf}}%
+    \put(0.13653825,0.11125768){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=14.2432\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{difract6874.pdf}}%
+    \put(0.17615216,0.10383752){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=9.9512\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{difract6874.pdf}}%
+    \put(0.22761431,0.09833229){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=7.1552\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{difract6874.pdf}}%
+    \put(0.24652368,0.09545995){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=6.4873\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{difract6874.pdf}}%
+    \put(0.33831785,0.10766727){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=4.4714\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{difract6874.pdf}}%
+    \put(0.35339745,0.18641638){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=4.2545\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{difract6874.pdf}}%
+    \put(0.37087067,0.10264068){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=4.0295\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{difract6874.pdf}}%
+    \put(0.39360975,0.10180299){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=3.7702\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{difract6874.pdf}}%
+    \put(0.40402185,0.10012749){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=3.6629\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{difract6874.pdf}}%
+    \put(0.42317057,0.10347848){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=3.4796\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{difract6874.pdf}}%
+    \put(0.4389683,0.53947078){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=3.3432\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{difract6874.pdf}}%
+    \put(0.45811701,0.11077893){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=3.1908\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{difract6874.pdf}}%
+    \put(0.48624167,0.09713545){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=2.9917\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{difract6874.pdf}}%
+    \put(0.52166677,0.0949813){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=2.7749\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{difract6874.pdf}}%
+    \put(0.56319557,0.10228174){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=2.5587\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{difract6874.pdf}}%
+    \put(0.58533629,0.12418308){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=2.4570\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{difract6874.pdf}}%
+    \put(0.62854059,0.11556608){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=2.2816\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{difract6874.pdf}}%
+    \put(0.64098723,0.10527369){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=2.2361\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{difract6874.pdf}}%
+    \put(0.67282191,0.11389058){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=2.1272\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{difract6874.pdf}}%
+    \put(0.72224958,0.10587206){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=1.9796\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{difract6874.pdf}}%
+    \put(0.78651752,0.14069879){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=1.8179\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{difract6874.pdf}}%
+    \put(0.85629059,0.10467522){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=1.6721\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{difract6874.pdf}}%
+    \put(0.93144929,0.11544636){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}d=1.5419\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{difract6874.pdf}}%
+    \put(0.04085874,0.12807547){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{difract6874.pdf}}%
+    \put(0.03212213,0.19497631){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{difract6874.pdf}}%
+    \put(0.03212213,0.26187715){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}15.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{difract6874.pdf}}%
+    \put(0.03212213,0.328778){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{difract6874.pdf}}%
+    \put(0.03212213,0.39567874){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}25.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{difract6874.pdf}}%
+    \put(0.03212213,0.46257958){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{difract6874.pdf}}%
+    \put(0.03212213,0.52948047){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}35.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{difract6874.pdf}}%
+    \put(0.03212213,0.59650098){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}40.0\end{tabular}}}}%
+    \put(0.14094711,0.02852841){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10$^\circ$\end{tabular}}}}%
+    \put(0.32113771,0.02852841){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20$^\circ$\end{tabular}}}}%
+    \put(0.47264673,0.02852841){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}30$^\circ$\end{tabular}}}}%
+    \put(0.62057054,0.02852841){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}40$^\circ$\end{tabular}}}}%
+    \put(0.76849441,0.02852841){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}50$^\circ$\end{tabular}}}}%
+    \put(0.91641823,0.02852841){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}60$^\circ$\end{tabular}}}}%
+    \put(0.52143411,0.00348957){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Угол $2\theta$ (градусы)\end{tabular}}}}%
+    \put(0.0129624,0.35518022){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Интенсивность, $\times 10^3$\end{tabular}}}}}%
+  \end{picture}%
+\endgroup%
