@@ -79,15 +79,18 @@
  Этот закон называется <<закон уплотнения грунтов>> и~формулируется так: <<Бесконечно малое изменение относительного объема пор грунта прямо пропорционально бесконечно малому изменению давления>> (Цытович,~1983, с.~36)\cite[36]{cytovich1983}.
 
  Индекс рекомпрессии $C_r$ "--- тангенс угла наклона части компрессионной кривой в~осях коэффициент пористости "--- логарифм давления.
- Для переуплотненных грунтов выполняются зависимости (\ref{eq:cr}):
+ Для переуплотненных грунтов выполняются зависимости (\ref{eq:over}):
 
-\begin{equation}
-  \label{eq:cr}
-  \begin{alignedat}{2}
-  & e_i = e_0 - C_r\log \left(\frac{\sigma_i}{\sigma_0}\right), \quad &\text{при } \sigma_i<\sigma_p \\
-  & e_i = e_0 - C_r\log \left(\frac{\sigma_p}{\sigma_0}\right) - C_c\log \left(\frac{\sigma_i}{\sigma_p}\right), \quad &\text{при } \sigma_i>\sigma_p
-  \end{alignedat}
-\end{equation}
+\begin{subequations}
+  \label{eq:over}
+  \begin{align}
+    \label{eq:cr}
+    & e_i = e_0 - C_r\log \left(\frac{\sigma_i}{\sigma_0}\right), \quad &\text{при } \sigma_i<\sigma_p \\
+    \label{eq:crcc}
+    & e_i = e_0 - C_r\log \left(\frac{\sigma_p}{\sigma_0}\right) - C_c\log \left(\frac{\sigma_i}{\sigma_p}\right), \quad &\text{при } \sigma_i>\sigma_p
+  \end{align}
+\end{subequations}
+
 
 
  
