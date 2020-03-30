@@ -1,0 +1,62 @@
+\pgfplotsset{
+%samples=15,
+width=0.75\linewidth,
+xlabel={Предел текучести $LL$, \%},
+ylabel={Индекс пластичности $PI$, \%},
+%extra y ticks={45},
+legend pos=north west,
+legend cell align={left},
+}
+
+\begin{tikzpicture}
+	\begin{axis}[
+	ymin = 0,
+	xmin = 0,
+	ymax = 50,
+	xmax = 100,
+	domain=0:100,
+	]
+		\addplot[only marks, mark=*, red!70!orange!80!black] table [x=LL, y=PI, col sep=semicolon] {data/plasticity-6.csv};
+		\addlegendentry{ИГЭ-6}
+
+		\addplot[only marks, mark=*, lime!40!black] table [x=LL, y=PI, col sep=semicolon] {data/plasticity-7.csv};
+		\addlegendentry{ИГЭ-7}
+
+		\addplot[only marks, mark=*, green!50!lime!30!black] table [x=LL, y=PI, col sep=semicolon] {data/plasticity-8.csv};
+		\addlegendentry{ИГЭ-8}
+
+		\addplot[only marks, mark=*, red!80!orange!50!black] table [x=LL, y=PI, col sep=semicolon] {data/plasticity-9.csv};
+		\addlegendentry{ИГЭ-9}
+
+		% A-line
+		\addplot [ no marks, domain=25.48:100] {0.73*(x-20)} 
+		node[pos=0.6, rotate=52] (endofplotsquare) {};
+		\node [below, rotate=52] at (endofplotsquare) {Линия A};
+
+		% B-line
+		%\addplot [ no marks] {0.75*x}
+		%node[pos=0.80, rotate=20] (endofplotsquare) {};
+		%\node [below, rotate=20] at (endofplotsquare) {$ACT = 0.75$};
+
+		% U-line
+		\addplot [ no marks, domain=16:100] {0.9*(x-8)}
+		node[pos=0.4, rotate=55] (endofplotsquare) {};
+		\node [above, rotate=55] at (endofplotsquare) {Линия U};
+
+		% T-line
+		\addplot [ no marks, draw=red!50!black, domain=16:100] {0.73*(x-11)}
+		node[pos=0.60, rotate=52] (endofplotsquare) {};
+		\node [below, rotate=52] at (endofplotsquare) {Линия T};
+
+		\addplot [no marks] coordinates {(16,0)(16,7)};
+
+		\addplot [no marks] coordinates {(50,0)(50,37.8)}
+		node[pos=0.3, rotate=90] (endofplotsquare) {};
+		\node [below, rotate=90] at (endofplotsquare) {Линия B};
+
+		\addplot [no marks] coordinates {(16,4)(25.48,4)};
+
+		\addplot [no marks] coordinates {(16,7)(29.59,7)};
+
+	\end{axis}
+\end{tikzpicture}
