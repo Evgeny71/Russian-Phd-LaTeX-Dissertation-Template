@@ -1,0 +1,310 @@
+\small
+\pgfplotsset{
+    discard if not/.style 2 args={
+        x filter/.code={
+            \edef\tempa{\thisrow{#1}}
+            \edef\tempb{#2}
+            \ifx\tempa\tempb
+            \else
+                \def\pgfmathresult{inf}
+            \fi
+        }
+    }
+}
+
+\makeatletter
+\pgfplotstableset{
+	columns={Sigma,Epsilon},
+    discard if not/.style 2 args={
+        row predicate/.code={
+            \def\pgfplotstable@loc@TMPd{\pgfplotstablegetelem{##1}{#1}\of}
+            \expandafter\pgfplotstable@loc@TMPd\pgfplotstablename
+            \edef\tempa{\pgfplotsretval}
+            \edef\tempb{#2}
+            \ifx\tempa\tempb
+            \else
+                \pgfplotstableuserowfalse
+            \fi
+        }
+	},
+	% Format numbers and titles
+	columns/Sigma/.style = {column name = $\sigma_1$, fixed ,fixed zerofill, precision=0, set thousands separator={\,}, dec sep align},
+	columns/Epsilon/.style = {column name = $\epsilon_1$, fixed, fixed zerofill, precision=3, dec sep align},
+	%columns/p/.style    = {column name = $p$, fixed, fixed zerofill, dec sep align},
+	%columns/ci/.style   = {string type, column name = 95\% CI},
+}
+\makeatother
+
+\pgfplotsset{
+	%samples=15,
+	width= 12cm, %\linewidth,
+	height = 12cm,
+	xlabel={Вертикальное эфф. напряжение $\sigma_1$, кПа},
+	ylabel={Отн. верт. деформация $\epsilon_1$, д. е.},
+	%extra y ticks={45},
+	legend pos=north west,
+	y dir=reverse, 
+	y tick label style={
+		/pgf/number format/.cd,
+			fixed,
+			fixed zerofill,
+			precision=3,
+		/tikz/.cd
+	},
+	x tick label style={
+        /pgf/number format/set thousands separator={\,},
+		/pgf/number format/.cd,
+			fixed,
+			fixed zerofill
+        /tikz/.cd
+	},
+    xticklabel={
+        \pgfkeys{ /pgf/number format/fixed, 
+            /pgf/number format/fixed zerofill, 
+            /pgf/number format/precision=0} 
+        \pgfmathparse{exp(\tick)}
+        \pgfmathprintnumber{\pgfmathresult}
+    }
+}
+
+{
+\small
+
+\begin{minipage}[t]{0.75\textwidth}
+	\begin{tikzpicture}
+		\centering
+		\begin{semilogxaxis}[y dir=reverse]
+		\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6835.csv};
+		\end{semilogxaxis}
+	\end{tikzpicture}
+	%\caption{GJ6835}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6835.csv}
+\end{minipage}%
+% requires \usepackage{booktabs}
+
+\newpage
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6874.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6874.csv}
+\end{minipage}%
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6890.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6890.csv}
+\end{minipage}%
+
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6864.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6864.csv}
+\end{minipage}%
+
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6838.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6838.csv}
+\end{minipage}%
+
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6898.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6898.csv}
+\end{minipage}%
+
+
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6888.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6888.csv}
+\end{minipage}%
+
+
+\newpage
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ68A0.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ68A0.csv}
+\end{minipage}%
+
+
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6840.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6840.csv}
+\end{minipage}%
+
+
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6895.csv};
+	\end{semilogxaxis}§
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6895.csv}
+\end{minipage}%
+
+
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6885.csv};
+	\end{semilogxaxis}
+	%\caption{GJ6885}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ6885.csv}
+\end{minipage}%
+
+
+
+\begin{minipage}[t]{0.75\textwidth}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ68B3.csv};
+	\end{semilogxaxis}
+	%\caption{GJ68B3}
+\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+	\pgfplotstabletypeset[
+		col sep = semicolon,
+		every head row/.style={
+		before row=\toprule,after row=\midrule},
+		every last row/.style={
+		after row=\bottomrule},
+		]{data/GJ68B3.csv}
+\end{minipage}%
+
+
+
+}

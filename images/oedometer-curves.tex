@@ -1,0 +1,163 @@
+\small
+\pgfplotsset{
+    % discard if not/.style 2 args={
+    %     x filter/.code={
+    %         \edef\tempa{\thisrow{#1}}
+    %         \edef\tempb{#2}
+    %         \ifx\tempa\tempb
+    %         \else
+    %             \def\pgfmathresult{inf}
+    %         \fi
+    %     }
+    % }
+}
+
+\pgfplotsset{
+% 	%samples=15,
+	width= \linewidth,
+	height = 12cm,
+	xlabel={Вертикальное эфф. напряжение $\sigma_1$, кПа},
+	ylabel={Отн. верт. деформация $\epsilon_1$, д. е.},
+% 	%extra y ticks={45},
+	legend pos=north west,
+	y dir=reverse, 
+	y tick label style={
+		/pgf/number format/.cd,
+			fixed,
+			fixed zerofill,
+			precision=3,
+		/tikz/.cd
+	},
+	ylabel near ticks,
+	% ylabel shift = 5cm,
+% 	% clip mode=individual,
+	x tick label style={
+        /pgf/number format/set thousands separator={\,},
+		/pgf/number format/.cd,
+			fixed,
+			fixed zerofill
+        /tikz/.cd
+	},
+    xticklabel={
+        \pgfkeys{ /pgf/number format/fixed, 
+            /pgf/number format/fixed zerofill, 
+            /pgf/number format/precision=0} 
+        \pgfmathparse{exp(\tick)}
+        \pgfmathprintnumber{\pgfmathresult}
+    }
+}
+
+{
+\tiny
+
+\begin{figure}
+	\begin{tikzpicture}
+		% \centering
+		\begin{semilogxaxis}
+		\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6835.csv};
+		\end{semilogxaxis}
+	\end{tikzpicture}
+	\caption{Компрессионная кривая образца \texttt{GJ6835}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6874.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{\texttt{GJ6874}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6890.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ6890}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6864.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ6864}}
+\end{figure}
+
+\begin{figure}
+
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6838.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ6838}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6898.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ6898}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6888.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{\texttt{GJ6888}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ68A0.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ68A0}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6840.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ6840}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6895.csv};
+	\end{semilogxaxis}§
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ6895}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ6885.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ6885}}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}
+	\begin{semilogxaxis}[y dir=reverse]
+	\addplot[mark=*, red] table [x=Sigma, y=Epsilon, col sep=semicolon] {data/GJ68B3.csv};
+	\end{semilogxaxis}
+\end{tikzpicture}
+\caption{Компрессионная кривая образца \texttt{GJ68B3}}
+\end{figure}
+
+}
