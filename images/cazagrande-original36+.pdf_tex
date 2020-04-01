@@ -60,7 +60,7 @@
     \put(0.29304099,0.66440563){\color[rgb]{0,0,0}\rotatebox{54.419755}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$r_{min}$\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{cazagrande-original36+.pdf}}%
     \put(0.18820133,1.00255547){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}II\end{tabular}}}}%
-    \put(0.60386921,0.50103879){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_p$\end{tabular}}}}%
+    \put(0.60386921,0.50103879){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_c$\end{tabular}}}}%
     \put(0.46504719,1.07805876){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I\end{tabular}}}}%
     \put(0.46343633,0.8792781){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T$\end{tabular}}}}%
     \put(0.61641195,0.81213346){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$C$\end{tabular}}}}%

@@ -70,6 +70,6 @@
     \put(0.72377312,0.077935){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1000\end{tabular}}}}%
     \put(0.84333597,0.077935){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1200\end{tabular}}}}%
     \put(0.9628986,0.077935){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1400\end{tabular}}}}%
-    \put(0.41785887,0.41962721){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_p$\end{tabular}}}}%
+    \put(0.41785887,0.41962721){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_c$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
