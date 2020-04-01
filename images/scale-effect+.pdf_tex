@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{356.16402777bp}%
+    \setlength{\unitlength}{356.16402828bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,16 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.30211902)%
+  \begin{picture}(1,1.30211901)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{scale-effect+.pdf}}%
     \put(-0.59820985,1.63021874){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.18535493\unitlength}\raggedright \end{minipage}}}%
-    \put(0.50140226,1.27834069){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Напряжение $\sigma_1$,  кПа\end{tabular}}}}%
+    \put(0.50140225,1.27834069){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Напряжение $\sigma_1$,  кПа\end{tabular}}}}%
     \put(0.02417581,0.64773778){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Коэффициент пористости $e$,  д. е.\end{tabular}}}}}%
-    \put(0.46332535,0.87128175){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\sigma_1 = 145$ кПа\end{tabular}}}}%
-    \put(0.46332535,1.07205616){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\sigma_1 = 165$ кПа\end{tabular}}}}%
-    \put(0.46332535,0.56408747){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\sigma_1 = 115$ кПа\end{tabular}}}}%
+    \put(0.46332535,0.87128175){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\sigma_c = 145$ кПа\end{tabular}}}}%
+    \put(0.46332535,1.07205616){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\sigma_c = 165$ кПа\end{tabular}}}}%
+    \put(0.46332535,0.56408747){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\sigma_c = 115$ кПа\end{tabular}}}}%
     \put(0.42968097,1.21534553){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
     \put(0.70398641,1.22191576){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1000\end{tabular}}}}%
     \put(0.13861525,0.23376788){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1.000\end{tabular}}}}%
